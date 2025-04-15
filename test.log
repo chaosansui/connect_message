@@ -1,0 +1,678 @@
+2025-04-15 12:46:25,256 - INFO - Starting RabbitMQ...
+2025-04-15 12:46:46,978 - WARNING - Start command ['brew', 'services', 'start', 'rabbitmq'] failed: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 12:46:52,580 - INFO - Running Multiple Messages...
+2025-04-15 12:46:55,402 - INFO - Sending message 1/10
+2025-04-15 12:46:55,740 - INFO - Sending message 2/10
+2025-04-15 12:46:56,076 - INFO - Sending message 3/10
+2025-04-15 12:46:56,411 - INFO - Sending message 4/10
+2025-04-15 12:46:56,735 - INFO - Sending message 5/10
+2025-04-15 12:46:57,060 - INFO - Sending message 6/10
+2025-04-15 12:46:57,387 - INFO - Sending message 7/10
+2025-04-15 12:46:57,714 - INFO - Sending message 8/10
+2025-04-15 12:46:58,044 - INFO - Sending message 9/10
+2025-04-15 12:46:58,379 - INFO - Sending message 10/10
+2025-04-15 12:46:58,723 - INFO - Multiple Messages: FAIL - Log contains ERROR
+2025-04-15 12:46:58,724 - INFO - Running Persistence...
+2025-04-15 12:47:01,594 - INFO - Sending message 1/5
+2025-04-15 12:47:01,853 - INFO - Sending message 2/5
+2025-04-15 12:47:02,095 - INFO - Sending message 3/5
+2025-04-15 12:47:02,315 - INFO - Sending message 4/5
+2025-04-15 12:47:02,531 - INFO - Sending message 5/5
+2025-04-15 12:47:02,751 - INFO - Stopping RabbitMQ...
+2025-04-15 12:47:07,567 - WARNING - Stop command ['brew', 'services', 'stop', 'rabbitmq'] failed: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 12:47:10,634 - INFO - Starting RabbitMQ...
+2025-04-15 12:47:11,016 - INFO - Starting RabbitMQ...
+2025-04-15 12:47:18,814 - WARNING - Start command ['brew', 'services', 'start', 'rabbitmq'] failed: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 12:47:29,555 - INFO - Persistence: FAIL - Log contains ERROR
+2025-04-15 12:47:29,555 - INFO - Running Multiple Consumers...
+2025-04-15 12:47:32,484 - INFO - Sending message 1/10
+2025-04-15 12:47:32,756 - INFO - Sending message 2/10
+2025-04-15 12:47:32,975 - INFO - Sending message 3/10
+2025-04-15 12:47:33,197 - INFO - Sending message 4/10
+2025-04-15 12:47:33,415 - INFO - Sending message 5/10
+2025-04-15 12:47:33,635 - INFO - Sending message 6/10
+2025-04-15 12:47:33,861 - INFO - Sending message 7/10
+2025-04-15 12:47:34,082 - INFO - Sending message 8/10
+2025-04-15 12:47:34,305 - INFO - Sending message 9/10
+2025-04-15 12:47:34,525 - INFO - Sending message 10/10
+2025-04-15 12:47:34,747 - INFO - Multiple Consumers: FAIL - Log contains ERROR
+2025-04-15 12:47:34,748 - INFO - Running Connection Failure...
+2025-04-15 12:47:35,588 - INFO - Stopping RabbitMQ...
+2025-04-15 12:47:40,405 - WARNING - Stop command ['brew', 'services', 'stop', 'rabbitmq'] failed: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 12:47:48,347 - INFO - Attempting send with RabbitMQ stopped...
+2025-04-15 12:47:48,605 - INFO - Connection Failure: FAIL - Send succeeded unexpectedly
+2025-04-15 12:47:48,605 - INFO - Running Management API Failure...
+2025-04-15 12:47:48,994 - INFO - Starting RabbitMQ...
+2025-04-15 12:47:56,758 - WARNING - Start command ['brew', 'services', 'start', 'rabbitmq'] failed: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 12:48:02,765 - INFO - Disabling management plugin...
+2025-04-15 12:48:14,621 - INFO - Sending message with management API disabled...
+2025-04-15 12:48:14,878 - INFO - Re-enabling management plugin...
+2025-04-15 12:48:15,835 - INFO - Management API Failure: FAIL - No API failure logged
+2025-04-15 12:48:15,835 - INFO - Running Log Integrity...
+2025-04-15 12:48:16,648 - INFO - Run 1/3
+2025-04-15 12:48:18,919 - INFO - Run 2/3
+2025-04-15 12:48:21,150 - INFO - Run 3/3
+2025-04-15 12:48:23,415 - INFO - Log Integrity: FAIL - Log contains ERROR
+2025-04-15 12:48:23,416 - INFO - Running High Concurrency...
+2025-04-15 12:48:26,244 - INFO - Sending 500 messages concurrently...
+2025-04-15 12:48:26,607 - INFO - High Concurrency: FAIL - Log contains ERROR
+2025-04-15 12:48:26,607 - INFO - Running Queue Backlog...
+2025-04-15 12:48:27,517 - INFO - Sending messages without consumer...
+2025-04-15 12:48:38,753 - INFO - Starting consumer...
+2025-04-15 12:48:43,761 - INFO - Queue Backlog: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - INFO - 
+Test Summary:
+2025-04-15 12:48:43,762 - INFO - Multiple Messages: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - INFO - Persistence: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - INFO - Multiple Consumers: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - INFO - Connection Failure: FAIL - Send succeeded unexpectedly
+2025-04-15 12:48:43,762 - INFO - Management API Failure: FAIL - No API failure logged
+2025-04-15 12:48:43,762 - INFO - Log Integrity: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - INFO - High Concurrency: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - INFO - Queue Backlog: FAIL - Log contains ERROR
+2025-04-15 12:48:43,762 - ERROR - 
+Some tests failed.
+2025-04-15 12:58:00,566 - INFO - 
+运行测试：多条消息...
+2025-04-15 12:58:03,389 - INFO - 发送消息 1/10
+2025-04-15 12:58:03,769 - INFO - 发送消息 2/10
+2025-04-15 12:58:04,105 - INFO - 发送消息 3/10
+2025-04-15 12:58:04,434 - INFO - 发送消息 4/10
+2025-04-15 12:58:04,767 - INFO - 发送消息 5/10
+2025-04-15 12:58:05,094 - INFO - 发送消息 6/10
+2025-04-15 12:58:05,422 - INFO - 发送消息 7/10
+2025-04-15 12:58:05,770 - INFO - 发送消息 8/10
+2025-04-15 12:58:06,101 - INFO - 发送消息 9/10
+2025-04-15 12:58:06,432 - INFO - 发送消息 10/10
+2025-04-15 12:58:06,758 - INFO - 多条消息: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:58:01,620 - __main__ - 
+2025-04-15 12:58:06,759 - INFO - 
+运行测试：持久化...
+2025-04-15 12:58:09,593 - INFO - 发送消息 1/5
+2025-04-15 12:58:09,853 - INFO - 发送消息 2/5
+2025-04-15 12:58:10,071 - INFO - 发送消息 3/5
+2025-04-15 12:58:10,292 - INFO - 发送消息 4/5
+2025-04-15 12:58:10,511 - INFO - 发送消息 5/5
+2025-04-15 12:58:10,744 - INFO - 停止 RabbitMQ...
+2025-04-15 12:58:17,633 - INFO - 启动 RabbitMQ...
+2025-04-15 12:58:18,007 - INFO - 启动 RabbitMQ...
+2025-04-15 12:58:23,527 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 12:58:43,832 - INFO - 持久化: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:58:07,783 - __main__ - 
+2025-04-15 12:58:43,834 - INFO - 
+运行测试：多消费者...
+2025-04-15 12:58:46,691 - INFO - 发送消息 1/10
+2025-04-15 12:58:46,945 - INFO - 发送消息 2/10
+2025-04-15 12:58:47,158 - INFO - 发送消息 3/10
+2025-04-15 12:58:47,379 - INFO - 发送消息 4/10
+2025-04-15 12:58:47,598 - INFO - 发送消息 5/10
+2025-04-15 12:58:47,815 - INFO - 发送消息 6/10
+2025-04-15 12:58:48,035 - INFO - 发送消息 7/10
+2025-04-15 12:58:48,257 - INFO - 发送消息 8/10
+2025-04-15 12:58:48,480 - INFO - 发送消息 9/10
+2025-04-15 12:58:48,698 - INFO - 发送消息 10/10
+2025-04-15 12:58:48,915 - INFO - 多消费者: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:58:44,881 - rabbitmq_client - 
+2025-04-15 12:58:48,916 - INFO - 
+运行测试：连接失败...
+2025-04-15 12:58:49,735 - INFO - 停止 RabbitMQ...
+2025-04-15 12:58:59,614 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-15 12:58:59,864 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 12:58:59,864 - INFO - 
+运行测试：管理 API 失败...
+2025-04-15 12:59:00,246 - INFO - 启动 RabbitMQ...
+2025-04-15 12:59:05,753 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 12:59:11,719 - INFO - 禁用管理插件...
+2025-04-15 12:59:22,559 - INFO - 在管理 API 禁用时发送消息...
+2025-04-15 12:59:22,847 - INFO - 重新启用管理插件...
+2025-04-15 12:59:24,578 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:17,747 - __main__ - 
+2025-04-15 12:59:24,578 - INFO - 
+运行测试：日志完整性...
+2025-04-15 12:59:25,394 - INFO - 运行 1/3
+2025-04-15 12:59:27,663 - INFO - 运行 2/3
+2025-04-15 12:59:29,931 - INFO - 运行 3/3
+2025-04-15 12:59:32,195 - INFO - 日志完整性: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:25,588 - __main__ - 
+2025-04-15 12:59:32,195 - INFO - 
+运行测试：高并发...
+2025-04-15 12:59:35,031 - INFO - 并发发送 500 条消息...
+2025-04-15 12:59:35,394 - INFO - 高并发: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:33,217 - __main__ - 
+2025-04-15 12:59:35,394 - INFO - 
+运行测试：队列积压...
+2025-04-15 12:59:36,270 - INFO - 在无消费者时发送消息...
+2025-04-15 12:59:47,246 - INFO - 启动消费者...
+2025-04-15 12:59:52,258 - INFO - 队列积压: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:47,444 - __main__ - 
+2025-04-15 12:59:52,260 - INFO - 
+测试总结：
+2025-04-15 12:59:52,260 - INFO - 多条消息: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:58:01,620 - __main__ - 
+2025-04-15 12:59:52,261 - INFO - 持久化: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:58:07,783 - __main__ - 
+2025-04-15 12:59:52,261 - INFO - 多消费者: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:58:44,881 - rabbitmq_client - 
+2025-04-15 12:59:52,261 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 12:59:52,261 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:17,747 - __main__ - 
+2025-04-15 12:59:52,261 - INFO - 日志完整性: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:25,588 - __main__ - 
+2025-04-15 12:59:52,262 - INFO - 高并发: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:33,217 - __main__ - 
+2025-04-15 12:59:52,262 - INFO - 队列积压: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 12:59:47,444 - __main__ - 
+2025-04-15 12:59:52,262 - ERROR - 
+部分测试失败。
+2025-04-15 14:45:02,032 - INFO - 
+运行测试：多条消息...
+2025-04-15 14:45:02,034 - WARNING - 端口 8000 已被占用: [Errno 48] Address already in use
+2025-04-15 14:45:06,042 - INFO - 发送消息 1/10
+2025-04-15 14:45:06,403 - INFO - 发送消息 2/10
+2025-04-15 14:45:06,733 - INFO - 发送消息 3/10
+2025-04-15 14:45:07,069 - INFO - 发送消息 4/10
+2025-04-15 14:45:07,399 - INFO - 发送消息 5/10
+2025-04-15 14:45:07,727 - INFO - 发送消息 6/10
+2025-04-15 14:45:08,051 - INFO - 发送消息 7/10
+2025-04-15 14:45:08,381 - INFO - 发送消息 8/10
+2025-04-15 14:45:08,711 - INFO - 发送消息 9/10
+2025-04-15 14:45:09,036 - INFO - 发送消息 10/10
+2025-04-15 14:45:09,362 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 14:45:09,366 - INFO - 
+运行测试：持久化...
+2025-04-15 14:45:12,161 - INFO - 发送消息 1/5
+2025-04-15 14:45:12,393 - INFO - 发送消息 2/5
+2025-04-15 14:45:12,611 - INFO - 发送消息 3/5
+2025-04-15 14:45:12,824 - INFO - 发送消息 4/5
+2025-04-15 14:45:13,034 - INFO - 发送消息 5/5
+2025-04-15 14:45:13,268 - INFO - 停止 RabbitMQ...
+2025-04-15 14:45:19,085 - INFO - 启动 RabbitMQ...
+2025-04-15 14:45:19,445 - INFO - 启动 RabbitMQ...
+2025-04-15 14:45:25,004 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 14:45:55,018 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 14:45:55,022 - INFO - 持久化: 失败 - 无法启动 RabbitMQ
+2025-04-15 14:45:55,032 - INFO - 
+运行测试：多消费者...
+2025-04-15 14:45:55,496 - INFO - 启动 RabbitMQ...
+2025-04-15 14:46:01,053 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 14:46:31,063 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 14:46:33,097 - INFO - 发送消息 1/10
+2025-04-15 14:46:33,339 - INFO - 发送消息 2/10
+2025-04-15 14:46:33,547 - INFO - 发送消息 3/10
+2025-04-15 14:46:33,750 - INFO - 发送消息 4/10
+2025-04-15 14:46:33,958 - INFO - 发送消息 5/10
+2025-04-15 14:46:34,164 - INFO - 发送消息 6/10
+2025-04-15 14:46:34,367 - INFO - 发送消息 7/10
+2025-04-15 14:46:34,573 - INFO - 发送消息 8/10
+2025-04-15 14:46:34,777 - INFO - 发送消息 9/10
+2025-04-15 14:46:34,981 - INFO - 发送消息 10/10
+2025-04-15 14:46:35,187 - INFO - 多消费者: 失败 - 未找到 'Received' 消息
+2025-04-15 14:46:35,187 - INFO - 
+运行测试：连接失败...
+2025-04-15 14:46:35,578 - INFO - 启动 RabbitMQ...
+2025-04-15 14:46:41,089 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 14:46:58,662 - INFO - 停止 RabbitMQ...
+2025-04-15 14:47:08,502 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-15 14:47:08,733 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 14:47:08,734 - INFO - 
+运行测试：管理 API 失败...
+2025-04-15 14:47:09,098 - INFO - 启动 RabbitMQ...
+2025-04-15 14:47:14,600 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 14:47:20,545 - INFO - 禁用管理插件...
+2025-04-15 14:47:31,470 - INFO - 在管理 API 禁用时发送消息...
+2025-04-15 14:47:31,732 - INFO - 重新启用管理插件...
+2025-04-15 14:47:33,471 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 监控队列状态失败: Cannot connect to host localhost:15672 ssl:default [Multiple exceptions: [Errno 61] Con
+2025-04-15 14:47:33,471 - INFO - 
+运行测试：日志完整性...
+2025-04-15 14:47:34,289 - INFO - 运行 1/3
+2025-04-15 14:47:36,546 - INFO - 运行 2/3
+2025-04-15 14:47:38,858 - INFO - 运行 3/3
+2025-04-15 14:47:41,122 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-15 14:47:41,123 - INFO - 
+运行测试：高并发...
+2025-04-15 14:47:43,923 - INFO - 并发发送 500 条消息...
+2025-04-15 14:47:44,316 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-15 14:47:44,316 - INFO - 
+运行测试：队列积压...
+2025-04-15 14:47:45,189 - INFO - 在无消费者时发送消息...
+2025-04-15 14:47:56,131 - INFO - 启动消费者...
+2025-04-15 14:48:01,147 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-15 14:48:01,147 - INFO - 
+测试总结：
+2025-04-15 14:48:01,148 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 14:48:01,148 - INFO - 持久化: 失败 - 无法启动 RabbitMQ
+2025-04-15 14:48:01,148 - INFO - 多消费者: 失败 - 未找到 'Received' 消息
+2025-04-15 14:48:01,148 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 14:48:01,148 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 监控队列状态失败: Cannot connect to host localhost:15672 ssl:default [Multiple exceptions: [Errno 61] Con
+2025-04-15 14:48:01,148 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-15 14:48:01,148 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-15 14:48:01,148 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-15 14:48:01,148 - ERROR - 
+部分测试失败。
+2025-04-15 14:55:21,907 - INFO - 
+运行测试：多条消息...
+2025-04-15 14:55:25,706 - INFO - 发送消息 1/10
+2025-04-15 14:55:26,031 - INFO - 发送消息 2/10
+2025-04-15 14:55:26,356 - INFO - 发送消息 3/10
+2025-04-15 14:55:26,677 - INFO - 发送消息 4/10
+2025-04-15 14:55:27,006 - INFO - 发送消息 5/10
+2025-04-15 14:55:27,334 - INFO - 发送消息 6/10
+2025-04-15 14:55:27,662 - INFO - 发送消息 7/10
+2025-04-15 14:55:27,989 - INFO - 发送消息 8/10
+2025-04-15 14:55:28,312 - INFO - 发送消息 9/10
+2025-04-15 14:55:28,637 - INFO - 发送消息 10/10
+2025-04-15 14:55:29,982 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 14:55:29,986 - INFO - 
+运行测试：持久化...
+2025-04-15 14:55:33,794 - INFO - 发送消息 1/5
+2025-04-15 14:55:34,040 - INFO - 发送消息 2/5
+2025-04-15 14:55:34,258 - INFO - 发送消息 3/5
+2025-04-15 14:55:34,473 - INFO - 发送消息 4/5
+2025-04-15 14:55:34,684 - INFO - 发送消息 5/5
+2025-04-15 14:55:34,897 - INFO - 停止 RabbitMQ...
+2025-04-15 14:55:42,763 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 14:55:56,003 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 14:56:01,806 - INFO - 启动 RabbitMQ...
+2025-04-15 14:56:02,168 - INFO - 启动 RabbitMQ...
+2025-04-15 14:56:14,825 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 14:57:14,834 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 14:57:25,357 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 14:58:25,365 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 14:58:35,880 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 14:59:35,887 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 14:59:35,888 - INFO - 持久化: 失败 - 无法启动 RabbitMQ
+2025-04-15 14:59:35,897 - INFO - 
+运行测试：多消费者...
+2025-04-15 14:59:36,295 - INFO - 启动 RabbitMQ...
+2025-04-15 14:59:38,472 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: Bootstrap failed: 5: Input/output error
+Try re-running the command as root for richer errors.
+Error: Failure while executing; `/bin/launchctl bootstrap gui/501 /Users/zzc/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-15 15:00:01,384 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:00:11,877 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:00:27,828 - INFO - 发送消息 1/10
+2025-04-15 15:00:28,056 - INFO - 发送消息 2/10
+2025-04-15 15:00:28,269 - INFO - 发送消息 3/10
+2025-04-15 15:00:28,510 - INFO - 发送消息 4/10
+2025-04-15 15:00:28,724 - INFO - 发送消息 5/10
+2025-04-15 15:00:28,947 - INFO - 发送消息 6/10
+2025-04-15 15:00:29,169 - INFO - 发送消息 7/10
+2025-04-15 15:00:29,382 - INFO - 发送消息 8/10
+2025-04-15 15:00:29,597 - INFO - 发送消息 9/10
+2025-04-15 15:00:29,812 - INFO - 发送消息 10/10
+2025-04-15 15:00:32,039 - INFO - 多消费者: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 15:00:23,014 - __main__ - 
+2025-04-15 15:00:32,043 - INFO - 
+运行测试：连接失败...
+2025-04-15 15:00:32,843 - INFO - 停止 RabbitMQ...
+2025-04-15 15:00:40,775 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:01:10,785 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 15:01:24,675 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-15 15:01:24,927 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 15:01:24,927 - INFO - 
+运行测试：管理 API 失败...
+2025-04-15 15:01:25,305 - INFO - 启动 RabbitMQ...
+2025-04-15 15:01:40,404 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:01:47,281 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: Warning: Taking root:admin ownership of some rabbitmq paths:
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin/rabbitmq-server
+  /opt/homebrew/opt/rabbitmq
+  /opt/homebrew/opt/rabbitmq/sbin
+  /opt/homebrew/var/homebrew/linked/rabbitmq
+This will require manual removal of these paths using `sudo rm` on
+brew upgrade/reinstall/uninstall.
+Warning: rabbitmq must be run as non-root to start at user login!
+Bootstrap failed: 5: Input/output error
+Error: Failure while executing; `/bin/launchctl bootstrap system /Library/LaunchDaemons/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-15 15:01:57,814 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:02:08,755 - INFO - 禁用管理插件...
+2025-04-15 15:02:19,570 - INFO - 在管理 API 禁用时发送消息...
+2025-04-15 15:02:19,819 - INFO - 重新启用管理插件...
+2025-04-15 15:02:21,435 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 监控队列状态失败: Cannot connect to host localhost:15672 ssl:default [Multiple exceptions: [Errno 61] Con
+2025-04-15 15:02:21,435 - INFO - 
+运行测试：日志完整性...
+2025-04-15 15:02:22,207 - INFO - 运行 1/3
+2025-04-15 15:02:25,464 - INFO - 运行 2/3
+2025-04-15 15:02:28,725 - INFO - 运行 3/3
+2025-04-15 15:02:31,989 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-15 15:02:31,989 - INFO - 
+运行测试：高并发...
+2025-04-15 15:02:35,771 - INFO - 并发发送 500 条消息...
+2025-04-15 15:02:36,162 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-15 15:02:36,162 - INFO - 
+运行测试：队列积压...
+2025-04-15 15:02:37,008 - INFO - 在无消费者时发送消息...
+2025-04-15 15:02:47,641 - INFO - 启动消费者...
+2025-04-15 15:02:52,661 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-15 15:02:52,662 - INFO - 
+测试总结：
+2025-04-15 15:02:52,662 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 15:02:52,662 - INFO - 持久化: 失败 - 无法启动 RabbitMQ
+2025-04-15 15:02:52,662 - INFO - 多消费者: 失败 - 日志包含 ERROR:  - 启动监控服务器失败: [Errno 48] Address already in use
+2025-04-15 15:00:23,014 - __main__ - 
+2025-04-15 15:02:52,663 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 15:02:52,663 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 监控队列状态失败: Cannot connect to host localhost:15672 ssl:default [Multiple exceptions: [Errno 61] Con
+2025-04-15 15:02:52,663 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-15 15:02:52,663 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-15 15:02:52,663 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-15 15:02:52,664 - ERROR - 
+部分测试失败。
+2025-04-15 15:11:00,673 - INFO - 
+运行测试：多条消息...
+2025-04-15 15:11:04,473 - INFO - 发送消息 1/10
+2025-04-15 15:11:04,813 - INFO - 发送消息 2/10
+2025-04-15 15:11:05,132 - INFO - 发送消息 3/10
+2025-04-15 15:11:05,452 - INFO - 发送消息 4/10
+2025-04-15 15:11:05,777 - INFO - 发送消息 5/10
+2025-04-15 15:11:06,096 - INFO - 发送消息 6/10
+2025-04-15 15:11:06,420 - INFO - 发送消息 7/10
+2025-04-15 15:11:06,743 - INFO - 发送消息 8/10
+2025-04-15 15:11:07,070 - INFO - 发送消息 9/10
+2025-04-15 15:11:07,396 - INFO - 发送消息 10/10
+2025-04-15 15:11:08,717 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 15:11:08,721 - INFO - 
+运行测试：持久化...
+2025-04-15 15:11:12,522 - INFO - 发送消息 1/5
+2025-04-15 15:11:12,764 - INFO - 发送消息 2/5
+2025-04-15 15:11:12,972 - INFO - 发送消息 3/5
+2025-04-15 15:11:13,179 - INFO - 发送消息 4/5
+2025-04-15 15:11:13,385 - INFO - 发送消息 5/5
+2025-04-15 15:11:13,591 - INFO - 停止 RabbitMQ...
+2025-04-15 15:11:21,476 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:11:51,487 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 15:12:07,431 - INFO - 启动 RabbitMQ...
+2025-04-15 15:12:17,876 - INFO - 启动 RabbitMQ...
+2025-04-15 15:12:46,057 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:13:46,078 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 15:14:11,667 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:15:11,687 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 15:15:37,238 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:16:37,257 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 15:16:37,260 - INFO - 持久化: 失败 - 无法启动 RabbitMQ
+2025-04-15 15:16:37,270 - INFO - 
+运行测试：多消费者...
+2025-04-15 15:16:47,694 - INFO - 启动 RabbitMQ...
+2025-04-15 15:16:50,348 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: Bootstrap failed: 5: Input/output error
+Try re-running the command as root for richer errors.
+Error: Failure while executing; `/bin/launchctl bootstrap gui/501 /Users/zzc/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-15 15:17:18,443 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: Warning: Taking root:admin ownership of some rabbitmq paths:
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin/rabbitmq-server
+  /opt/homebrew/opt/rabbitmq
+  /opt/homebrew/opt/rabbitmq/sbin
+  /opt/homebrew/var/homebrew/linked/rabbitmq
+This will require manual removal of these paths using `sudo rm` on
+brew upgrade/reinstall/uninstall.
+Warning: rabbitmq must be run as non-root to start at user login!
+Bootstrap failed: 5: Input/output error
+Error: Failure while executing; `/bin/launchctl bootstrap system /Library/LaunchDaemons/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-15 15:17:34,394 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:17:55,533 - INFO - 发送消息 1/10
+2025-04-15 15:17:55,783 - INFO - 发送消息 2/10
+2025-04-15 15:17:55,997 - INFO - 发送消息 3/10
+2025-04-15 15:17:56,209 - INFO - 发送消息 4/10
+2025-04-15 15:17:56,415 - INFO - 发送消息 5/10
+2025-04-15 15:17:56,656 - INFO - 发送消息 6/10
+2025-04-15 15:17:56,886 - INFO - 发送消息 7/10
+2025-04-15 15:17:57,104 - INFO - 发送消息 8/10
+2025-04-15 15:17:57,338 - INFO - 发送消息 9/10
+2025-04-15 15:17:57,545 - INFO - 发送消息 10/10
+2025-04-15 15:17:59,757 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-15 15:17:59,776 - INFO - 
+运行测试：连接失败...
+2025-04-15 15:18:00,591 - INFO - 停止 RabbitMQ...
+2025-04-15 15:18:08,571 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:18:38,579 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 15:19:02,504 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-15 15:19:17,792 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 15:19:17,793 - INFO - 
+运行测试：管理 API 失败...
+2025-04-15 15:19:28,191 - INFO - 启动 RabbitMQ...
+2025-04-15 15:19:56,324 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:20:39,632 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: Warning: Taking root:admin ownership of some rabbitmq paths:
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin/rabbitmq-server
+  /opt/homebrew/opt/rabbitmq
+  /opt/homebrew/opt/rabbitmq/sbin
+  /opt/homebrew/var/homebrew/linked/rabbitmq
+This will require manual removal of these paths using `sudo rm` on
+brew upgrade/reinstall/uninstall.
+Warning: rabbitmq must be run as non-root to start at user login!
+Bootstrap failed: 5: Input/output error
+Error: Failure while executing; `/bin/launchctl bootstrap system /Library/LaunchDaemons/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-15 15:20:55,661 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:21:11,602 - INFO - 禁用管理插件...
+2025-04-15 15:21:27,428 - INFO - 在管理 API 禁用时发送消息...
+2025-04-15 15:21:27,674 - INFO - 重新启用管理插件...
+2025-04-15 15:21:34,379 - INFO - 管理 API 失败: 通过 - 日志检查通过
+2025-04-15 15:21:34,380 - INFO - 
+运行测试：日志完整性...
+2025-04-15 15:21:35,228 - INFO - 运行 1/3
+2025-04-15 15:21:38,487 - INFO - 运行 2/3
+2025-04-15 15:21:41,722 - INFO - 运行 3/3
+2025-04-15 15:21:44,954 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-15 15:21:44,955 - INFO - 
+运行测试：高并发...
+2025-04-15 15:21:48,761 - INFO - 并发发送 500 条消息...
+2025-04-15 15:21:49,104 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-15 15:21:49,104 - INFO - 
+运行测试：队列积压...
+2025-04-15 15:21:50,032 - INFO - 在无消费者时发送消息...
+2025-04-15 15:22:00,734 - INFO - 启动消费者...
+2025-04-15 15:22:05,743 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - INFO - 
+测试总结：
+2025-04-15 15:22:05,744 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - INFO - 持久化: 失败 - 无法启动 RabbitMQ
+2025-04-15 15:22:05,744 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - INFO - 连接失败: 失败 - 发送意外成功
+2025-04-15 15:22:05,744 - INFO - 管理 API 失败: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-15 15:22:05,744 - ERROR - 
+部分测试失败。
+2025-04-15 15:32:19,300 - INFO - 
+运行测试：多条消息...
+2025-04-15 15:32:32,117 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:32:52,414 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:33:04,304 - INFO - 启动 RabbitMQ...
+2025-04-15 15:33:37,026 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:34:07,423 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:34:37,834 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:34:37,836 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:35:37,857 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 15:36:08,384 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:36:38,782 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:37:09,185 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:37:09,186 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:38:09,206 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 15:38:39,728 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:39:10,130 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:39:40,527 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:39:40,528 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:40:40,547 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 15:40:40,562 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 15:40:44,515 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: sudo: /usr/local/sbin/rabbitmq-server: command not found
+
+2025-04-15 15:41:05,375 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:41:26,207 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:41:47,012 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:41:47,013 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:42:10,939 - INFO - 发送消息 1/10
+2025-04-15 15:42:11,280 - INFO - 发送消息 2/10
+2025-04-15 15:42:11,602 - INFO - 发送消息 3/10
+2025-04-15 15:42:11,918 - INFO - 发送消息 4/10
+2025-04-15 15:42:12,235 - INFO - 发送消息 5/10
+2025-04-15 15:42:12,552 - INFO - 发送消息 6/10
+2025-04-15 15:42:12,868 - INFO - 发送消息 7/10
+2025-04-15 15:42:13,187 - INFO - 发送消息 8/10
+2025-04-15 15:42:13,505 - INFO - 发送消息 9/10
+2025-04-15 15:42:13,816 - INFO - 发送消息 10/10
+2025-04-15 15:42:15,133 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 15:42:15,144 - INFO - 
+运行测试：持久化...
+2025-04-15 15:42:28,093 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:42:58,100 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 15:43:29,309 - INFO - 启动 RabbitMQ...
+2025-04-15 15:44:02,261 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:44:32,665 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:45:03,072 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:45:03,073 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:46:03,095 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 15:46:33,607 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:47:04,007 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:47:34,413 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:47:34,414 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:48:24,765 - INFO - 发送消息 1/5
+2025-04-15 15:48:25,016 - INFO - 发送消息 2/5
+2025-04-15 15:48:25,215 - INFO - 发送消息 3/5
+2025-04-15 15:48:25,421 - INFO - 发送消息 4/5
+2025-04-15 15:48:25,623 - INFO - 发送消息 5/5
+2025-04-15 15:48:25,825 - INFO - 停止 RabbitMQ...
+2025-04-15 15:48:38,827 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:49:08,837 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 15:49:29,761 - INFO - 启动 RabbitMQ...
+2025-04-15 15:49:40,232 - INFO - 启动 RabbitMQ...
+2025-04-15 15:50:14,415 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:50:44,814 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:51:15,222 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:51:15,224 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 15:52:15,242 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 15:52:45,741 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:53:16,150 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:53:46,567 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:53:46,568 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:54:46,584 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 15:55:17,104 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:55:47,512 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:56:17,916 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:56:17,917 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 15:57:17,934 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 15:57:17,946 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 15:58:17,962 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 15:58:48,465 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:59:18,861 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:59:49,257 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 15:59:49,258 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 16:00:49,277 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 16:00:49,278 - INFO - 持久化: 失败 - 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 16:00:49,288 - INFO - 
+运行测试：多消费者...
+2025-04-15 16:01:22,395 - INFO - 启动 RabbitMQ...
+2025-04-15 16:01:55,572 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:02:25,968 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:02:56,372 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:02:56,373 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:03:24,739 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:03:45,513 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:04:06,302 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:04:06,302 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:04:27,147 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:04:47,917 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:05:08,687 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:05:08,687 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 16:05:34,602 - INFO - 发送消息 1/10
+2025-04-15 16:05:34,835 - INFO - 发送消息 2/10
+2025-04-15 16:05:35,030 - INFO - 发送消息 3/10
+2025-04-15 16:05:35,230 - INFO - 发送消息 4/10
+2025-04-15 16:05:35,431 - INFO - 发送消息 5/10
+2025-04-15 16:05:35,633 - INFO - 发送消息 6/10
+2025-04-15 16:05:35,832 - INFO - 发送消息 7/10
+2025-04-15 16:05:36,031 - INFO - 发送消息 8/10
+2025-04-15 16:05:36,231 - INFO - 发送消息 9/10
+2025-04-15 16:05:36,431 - INFO - 发送消息 10/10
+2025-04-15 16:05:38,637 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-15 16:05:38,656 - INFO - 
+运行测试：连接失败...
+2025-04-15 16:05:51,233 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:06:04,911 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:06:16,771 - INFO - 启动 RabbitMQ...
+2025-04-15 16:06:49,380 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:07:19,782 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:07:50,185 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:07:50,187 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:08:50,205 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 16:09:20,707 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:09:51,118 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:10:21,522 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:10:21,523 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 16:11:21,541 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 16:11:52,069 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:12:22,474 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:12:48,950 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:12:48,951 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 16:13:09,989 - INFO - 停止 RabbitMQ...
+2025-04-15 16:13:23,646 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:13:53,653 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 16:14:27,566 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-15 16:14:37,596 - INFO - 启动 RabbitMQ...
+2025-04-15 16:14:38,546 - INFO - 启动 RabbitMQ...
+2025-04-15 16:15:11,439 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:15:41,841 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:16:12,247 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:16:12,248 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:16:42,191 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:17:02,952 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:17:23,749 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:17:23,749 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:17:44,590 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:18:05,392 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:18:26,162 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:18:26,162 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 16:18:46,781 - INFO - 连接失败: 失败 - 未找到 '连接已关闭'
+2025-04-15 16:18:46,781 - INFO - 
+运行测试：管理 API 失败...
+2025-04-15 16:45:35,694 - INFO - 
+运行测试：多条消息...
+2025-04-15 16:45:38,102 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Error: Service `rabbitmq` is started as `root`. Try:
+  sudo brew services stop rabbitmq
+

@@ -676,3 +676,3711 @@ Error: Failure while executing; `/bin/launchctl bootstrap system /Library/Launch
 2025-04-15 16:45:38,102 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Error: Service `rabbitmq` is started as `root`. Try:
   sudo brew services stop rabbitmq
 
+2025-04-15 16:46:08,120 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 16:58:18,974 - INFO - 启动 RabbitMQ...
+2025-04-15 16:58:51,828 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:59:20,924 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:59:41,679 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 16:59:41,679 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 16:59:43,908 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: Warning: Taking root:admin ownership of some rabbitmq paths:
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin
+  /opt/homebrew/Cellar/rabbitmq/4.0.8/sbin/rabbitmq-server
+  /opt/homebrew/opt/rabbitmq
+  /opt/homebrew/opt/rabbitmq/sbin
+  /opt/homebrew/var/homebrew/linked/rabbitmq
+This will require manual removal of these paths using `sudo rm` on
+brew upgrade/reinstall/uninstall.
+Warning: rabbitmq must be run as non-root to start at user login!
+Bootstrap failed: 5: Input/output error
+Error: Failure while executing; `/bin/launchctl bootstrap system /Library/LaunchDaemons/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-15 17:00:04,777 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:00:25,601 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:00:46,370 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:00:46,370 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:01:06,927 - INFO - 
+运行测试：多条消息...
+2025-04-15 17:01:19,655 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:01:49,663 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 17:02:01,802 - INFO - 启动 RabbitMQ...
+2025-04-15 17:02:34,673 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:03:05,109 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:03:35,547 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:03:35,550 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:04:35,568 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 17:05:06,088 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:05:36,496 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:06:06,890 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:06:06,891 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:07:06,904 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:07:37,418 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:08:07,822 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:08:38,210 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:08:38,211 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:09:38,227 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:09:38,242 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 17:10:38,256 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:11:08,790 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:11:39,200 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:12:09,599 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:12:09,600 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:12:52,141 - INFO - 发送消息 1/10
+2025-04-15 17:12:52,481 - INFO - 发送消息 2/10
+2025-04-15 17:12:52,802 - INFO - 发送消息 3/10
+2025-04-15 17:12:53,122 - INFO - 发送消息 4/10
+2025-04-15 17:12:53,444 - INFO - 发送消息 5/10
+2025-04-15 17:12:53,761 - INFO - 发送消息 6/10
+2025-04-15 17:12:54,071 - INFO - 发送消息 7/10
+2025-04-15 17:12:54,386 - INFO - 发送消息 8/10
+2025-04-15 17:12:54,702 - INFO - 发送消息 9/10
+2025-04-15 17:12:55,017 - INFO - 发送消息 10/10
+2025-04-15 17:12:56,349 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 17:12:56,359 - INFO - 
+运行测试：持久化...
+2025-04-15 17:13:09,166 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:13:29,443 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:13:41,334 - INFO - 启动 RabbitMQ...
+2025-04-15 17:14:14,047 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:14:38,874 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:14:59,633 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:14:59,633 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:15:22,490 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:15:43,245 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:16:04,002 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:16:04,002 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:16:24,839 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:16:45,588 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:17:06,347 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:17:06,347 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:17:30,250 - INFO - 发送消息 1/5
+2025-04-15 17:17:30,482 - INFO - 发送消息 2/5
+2025-04-15 17:17:30,685 - INFO - 发送消息 3/5
+2025-04-15 17:17:30,884 - INFO - 发送消息 4/5
+2025-04-15 17:17:31,086 - INFO - 发送消息 5/5
+2025-04-15 17:17:31,286 - INFO - 停止 RabbitMQ...
+2025-04-15 17:17:43,789 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:18:00,927 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:18:12,083 - INFO - 启动 RabbitMQ...
+2025-04-15 17:18:12,811 - INFO - 启动 RabbitMQ...
+2025-04-15 17:18:45,511 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:19:15,923 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:19:46,319 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:19:46,320 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:20:46,334 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 17:21:16,965 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:21:47,372 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:22:17,813 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:22:17,814 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:23:17,833 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:23:48,390 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:24:18,809 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:24:49,224 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:24:49,225 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:25:49,242 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:25:49,255 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 17:26:49,271 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:27:19,828 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:27:50,284 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:28:20,739 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:28:20,740 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:29:20,759 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 17:29:20,760 - INFO - 持久化: 失败 - 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 17:29:20,770 - INFO - 
+运行测试：多消费者...
+2025-04-15 17:29:54,075 - INFO - 启动 RabbitMQ...
+2025-04-15 17:30:27,195 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:30:57,648 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:31:28,088 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:31:28,089 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:32:28,107 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 17:32:58,646 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:33:29,055 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:33:59,498 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:33:59,499 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:34:59,520 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:35:30,088 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:36:00,535 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:36:30,984 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:36:30,985 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:37:31,004 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:37:31,016 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 17:38:31,031 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:39:01,572 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:39:31,981 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:40:02,404 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:40:02,405 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:40:47,306 - INFO - 发送消息 1/10
+2025-04-15 17:40:47,543 - INFO - 发送消息 2/10
+2025-04-15 17:40:47,746 - INFO - 发送消息 3/10
+2025-04-15 17:40:47,949 - INFO - 发送消息 4/10
+2025-04-15 17:40:48,151 - INFO - 发送消息 5/10
+2025-04-15 17:40:48,352 - INFO - 发送消息 6/10
+2025-04-15 17:40:48,559 - INFO - 发送消息 7/10
+2025-04-15 17:40:48,763 - INFO - 发送消息 8/10
+2025-04-15 17:40:48,965 - INFO - 发送消息 9/10
+2025-04-15 17:40:49,167 - INFO - 发送消息 10/10
+2025-04-15 17:40:51,376 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-15 17:40:51,396 - INFO - 
+运行测试：连接失败...
+2025-04-15 17:41:04,163 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:41:25,677 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 
+2025-04-15 17:41:37,567 - INFO - 启动 RabbitMQ...
+2025-04-15 17:42:10,226 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:42:40,662 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:43:11,083 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:43:11,084 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:43:48,241 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:44:09,118 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:44:29,929 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:44:29,930 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:44:50,762 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:45:11,542 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:45:32,330 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:45:32,331 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:45:53,230 - INFO - 停止 RabbitMQ...
+2025-04-15 17:46:05,866 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:46:18,568 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:46:42,746 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-15 17:46:52,779 - INFO - 启动 RabbitMQ...
+2025-04-15 17:46:53,542 - INFO - 启动 RabbitMQ...
+2025-04-15 17:47:26,209 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:47:56,617 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:48:27,032 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:48:27,033 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:48:59,165 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:49:19,971 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:49:40,794 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:49:40,795 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:50:01,695 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:50:22,496 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:50:43,272 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:50:43,272 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:51:03,867 - INFO - 连接失败: 失败 - 未找到 '连接已关闭'
+2025-04-15 17:51:03,867 - INFO - 
+运行测试：管理 API 失败...
+2025-04-15 17:51:16,813 - WARNING - 停止命令 ['brew', 'services', 'stop', 'rabbitmq'] 失败: Stopping `rabbitmq`... (might take a while)
+==> Successfully stopped `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:51:46,822 - WARNING - 停止命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'stop', 'rabbitmq'] 超时
+2025-04-15 17:52:18,153 - INFO - 启动 RabbitMQ...
+2025-04-15 17:52:51,027 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:53:21,439 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:53:51,843 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:53:51,844 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 17:54:51,861 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 17:55:22,426 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:55:52,842 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:56:23,253 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:56:23,255 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 17:57:23,273 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 17:57:53,922 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:58:24,948 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:58:55,369 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 17:58:55,371 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 18:00:07,618 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 18:00:07,632 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 18:01:54,604 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 18:06:33,159 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:12:36,208 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:39:11,324 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:39:11,326 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 19:40:11,351 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 19:40:11,354 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 19:40:11,354 - INFO - 禁用管理插件...
+2025-04-15 19:40:27,187 - INFO - 在管理 API 禁用时发送消息...
+2025-04-15 19:40:42,490 - INFO - 重新启用管理插件...
+2025-04-15 19:41:18,235 - INFO - 管理 API 失败: 失败 - 未找到 'Received' 消息
+2025-04-15 19:41:18,236 - INFO - 
+运行测试：日志完整性...
+2025-04-15 19:41:51,852 - INFO - 启动 RabbitMQ...
+2025-04-15 19:42:24,956 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:42:55,396 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:43:25,832 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:43:25,833 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 19:44:25,853 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 19:44:56,391 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:45:26,820 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:45:57,253 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:45:57,254 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 19:46:57,268 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 19:47:27,820 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:47:58,334 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:48:28,835 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:48:28,837 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 19:49:28,855 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 19:49:28,873 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 19:50:28,888 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 19:50:59,509 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:51:29,986 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:52:00,470 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:52:00,471 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 19:53:00,493 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 19:53:00,495 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 19:53:00,495 - INFO - 运行 1/3
+2025-04-15 19:53:18,893 - INFO - 运行 2/3
+2025-04-15 19:53:37,220 - INFO - 运行 3/3
+2025-04-15 19:53:55,545 - INFO - 日志完整性: 失败 - 未找到 'Received' 消息
+2025-04-15 19:53:55,546 - INFO - 
+运行测试：高并发...
+2025-04-15 19:54:29,311 - INFO - 启动 RabbitMQ...
+2025-04-15 19:55:02,533 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:55:33,009 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:56:03,482 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:56:03,483 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 19:57:03,502 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 19:57:34,100 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:58:04,565 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:58:35,036 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 19:58:35,037 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 19:59:35,055 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 20:00:05,655 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:00:36,129 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:01:06,588 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:01:06,589 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 20:02:06,598 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 20:02:06,610 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 20:03:06,616 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 20:03:37,214 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:04:07,680 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:04:38,142 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:04:38,143 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 20:05:38,160 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 20:05:38,162 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 20:05:41,187 - INFO - 并发发送 500 条消息...
+2025-04-15 20:05:56,487 - INFO - 高并发: 失败 - 未找到 'Received' 消息
+2025-04-15 20:05:56,488 - INFO - 
+运行测试：队列积压...
+2025-04-15 20:06:30,462 - INFO - 启动 RabbitMQ...
+2025-04-15 20:07:04,119 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:07:34,645 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:08:05,165 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:08:05,166 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: ==> Successfully started `rabbitmq` (label: homebrew.mxcl.rabbitmq)
+
+2025-04-15 20:09:05,181 - WARNING - 启动命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['sudo', 'brew', 'services', 'start', 'rabbitmq'] 超时
+2025-04-15 20:09:35,831 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:10:06,373 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:10:36,898 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:10:36,899 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 20:11:36,914 - WARNING - 启动命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 20:12:07,589 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:12:38,115 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:13:08,648 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:13:08,650 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-15 20:14:08,667 - WARNING - 启动命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 20:14:08,679 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-15 20:15:08,694 - WARNING - 启动命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['sudo', '/usr/local/sbin/rabbitmq-server', '-detached'] 超时
+2025-04-15 20:15:39,390 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:16:09,917 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:16:40,460 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-15 20:16:40,461 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-15 20:17:40,476 - WARNING - 启动命令 ['sudo', 'rabbitmq-server', '-detached'] 失败: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 20:17:40,477 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 20:17:40,477 - INFO - 在无消费者时发送消息...
+2025-04-15 20:30:27,029 - INFO - 启动消费者...
+2025-04-15 20:30:32,052 - INFO - 队列积压: 失败 - 未找到 'Received' 消息
+2025-04-15 20:30:32,053 - INFO - 
+测试总结：
+2025-04-15 20:30:32,053 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-15 20:30:32,053 - INFO - 持久化: 失败 - 无法启动 RabbitMQ: 命令 ['sudo', 'rabbitmq-server', '-detached'] 超时
+2025-04-15 20:30:32,053 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-15 20:30:32,053 - INFO - 连接失败: 失败 - 未找到 '连接已关闭'
+2025-04-15 20:30:32,054 - INFO - 管理 API 失败: 失败 - 未找到 'Received' 消息
+2025-04-15 20:30:32,054 - INFO - 日志完整性: 失败 - 未找到 'Received' 消息
+2025-04-15 20:30:32,054 - INFO - 高并发: 失败 - 未找到 'Received' 消息
+2025-04-15 20:30:32,054 - INFO - 队列积压: 失败 - 未找到 'Received' 消息
+2025-04-15 20:30:32,054 - ERROR - 
+部分测试失败。
+2025-04-16 09:37:53,694 - INFO - 启动 RabbitMQ...
+2025-04-16 09:37:53,818 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 09:37:56,412 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: Bootstrap failed: 5: Input/output error
+Try re-running the command as root for richer errors.
+Error: Failure while executing; `/bin/launchctl bootstrap gui/501 /Users/zzc/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-16 09:38:26,981 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:38:57,381 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:39:27,773 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:39:27,774 - WARNING - 启动命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-16 09:39:58,239 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:40:28,620 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:40:59,067 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:40:59,067 - WARNING - 启动命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 失败: 
+2025-04-16 09:40:59,071 - WARNING - 启动命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 失败: 命令 ['/usr/local/sbin/rabbitmq-server', '-detached'] 错误: [Errno 2] No such file or directory: '/usr/local/sbin/rabbitmq-server'
+2025-04-16 09:41:29,544 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:41:59,957 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:42:30,354 - WARNING - RabbitMQ 启动中，等待重试...
+2025-04-16 09:42:30,354 - WARNING - 启动命令 ['rabbitmq-server', '-detached'] 失败: 
+2025-04-16 09:42:30,354 - ERROR - 无法启动 RabbitMQ: 无法启动 RabbitMQ: 
+2025-04-16 09:44:58,680 - INFO - 启动 RabbitMQ...
+2025-04-16 09:45:00,967 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 09:45:01,094 - INFO - 尝试启动: ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached']
+2025-04-16 09:45:21,598 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-126-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:45:42,005 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-291-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:46:02,414 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-755-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:46:02,414 - WARNING - 命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 09:46:02,414 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 09:46:22,912 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-288-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:46:43,341 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-265-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:47:03,803 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-234-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:47:03,803 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 09:47:03,804 - INFO - 尝试启动: ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached']
+2025-04-16 09:47:24,380 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-524-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:47:44,856 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-1000-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:48:05,377 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-733-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:48:05,377 - WARNING - 命令 ['/opt/homebrew/opt/rabbitmq/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 09:48:05,377 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 09:48:25,971 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-432-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:48:46,410 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-183-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:49:06,840 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-177-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:49:06,841 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 09:49:06,841 - INFO - 尝试启动: ['brew', 'services', 'start', 'rabbitmq']
+2025-04-16 09:49:09,183 - WARNING - 启动命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: 命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: Bootstrap failed: 5: Input/output error
+Try re-running the command as root for richer errors.
+Error: Failure while executing; `/bin/launchctl bootstrap gui/501 /Users/zzc/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-16 09:49:09,184 - ERROR - 请检查 RabbitMQ 日志: /opt/homebrew/var/log/rabbitmq/rabbit@*.log
+2025-04-16 09:49:09,184 - ERROR - 无法启动 RabbitMQ: 无法启动 RabbitMQ: 命令 ['brew', 'services', 'start', 'rabbitmq'] 失败: Bootstrap failed: 5: Input/output error
+Try re-running the command as root for richer errors.
+Error: Failure while executing; `/bin/launchctl bootstrap gui/501 /Users/zzc/Library/LaunchAgents/homebrew.mxcl.rabbitmq.plist` exited with 5.
+
+2025-04-16 09:50:28,393 - INFO - 启动 RabbitMQ...
+2025-04-16 09:50:30,932 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 09:50:51,440 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-184-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:51:11,842 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-502-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:51:32,247 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-116-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:51:32,247 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 09:51:32,247 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 09:51:52,738 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-266-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:52:13,174 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-726-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:52:33,591 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-642-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 09:52:33,591 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 09:52:33,591 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 09:52:33,591 - ERROR - 无法启动 RabbitMQ: 无法启动 RabbitMQ: 
+2025-04-16 10:06:06,197 - INFO - 
+运行测试：多条消息...
+2025-04-16 10:06:06,200 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:06:17,160 - INFO - RabbitMQ 已停止
+2025-04-16 10:06:17,918 - INFO - 启动 RabbitMQ...
+2025-04-16 10:06:20,490 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:06:41,018 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-240-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:07:01,414 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-802-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:07:21,803 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-152-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:07:21,804 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:07:21,804 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:07:42,282 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-21-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:08:02,679 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-252-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:08:23,078 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-24-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:08:23,078 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:08:23,078 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:08:23,078 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:08:26,089 - INFO - 发送消息 1/10
+2025-04-16 10:08:41,473 - INFO - 发送消息 2/10
+2025-04-16 10:08:56,848 - INFO - 发送消息 3/10
+2025-04-16 10:09:12,229 - INFO - 发送消息 4/10
+2025-04-16 10:09:27,612 - INFO - 发送消息 5/10
+2025-04-16 10:09:42,994 - INFO - 发送消息 6/10
+2025-04-16 10:09:58,374 - INFO - 发送消息 7/10
+2025-04-16 10:10:13,754 - INFO - 发送消息 8/10
+2025-04-16 10:10:29,133 - INFO - 发送消息 9/10
+2025-04-16 10:10:44,552 - INFO - 发送消息 10/10
+2025-04-16 10:11:00,937 - INFO - 多条消息: 失败 - 未找到 'Received' 消息
+2025-04-16 10:11:00,937 - INFO - 
+运行测试：持久化...
+2025-04-16 10:11:00,937 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:11:01,342 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:11:01,356 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:11:02,128 - INFO - 启动 RabbitMQ...
+2025-04-16 10:11:04,542 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:11:25,038 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-424-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:11:45,413 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-925-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:12:05,808 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-758-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:12:05,809 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:12:05,809 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:12:26,283 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-794-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:12:46,679 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-360-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:13:07,066 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-888-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:13:07,066 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:13:07,066 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:13:07,066 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:13:10,076 - INFO - 发送消息 1/5
+2025-04-16 10:13:25,358 - INFO - 发送消息 2/5
+2025-04-16 10:13:40,629 - INFO - 发送消息 3/5
+2025-04-16 10:13:56,024 - INFO - 发送消息 4/5
+2025-04-16 10:14:11,274 - INFO - 发送消息 5/5
+2025-04-16 10:14:26,525 - INFO - 停止 RabbitMQ...
+2025-04-16 10:14:26,525 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:14:26,923 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:14:26,936 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:14:27,308 - INFO - 启动 RabbitMQ...
+2025-04-16 10:14:27,673 - INFO - 启动 RabbitMQ...
+2025-04-16 10:14:30,087 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:14:50,569 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-767-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:15:10,976 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-682-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:15:31,378 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-188-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:15:31,378 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:15:31,378 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:15:51,864 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-279-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:16:12,256 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-198-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:16:32,664 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-45-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:16:32,664 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:16:32,664 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:16:32,664 - INFO - 持久化: 失败 - 无法启动 RabbitMQ: 
+2025-04-16 10:16:32,665 - INFO - 
+运行测试：多消费者...
+2025-04-16 10:16:32,665 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:16:33,054 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:16:33,067 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:16:33,815 - INFO - 启动 RabbitMQ...
+2025-04-16 10:16:36,237 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:16:56,722 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-876-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:17:17,125 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-963-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:17:37,520 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-821-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:17:37,521 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:17:37,521 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:17:58,006 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-865-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:18:18,428 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-33-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:18:38,819 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-976-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:18:38,820 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:18:38,820 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:18:38,820 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:18:43,834 - INFO - 发送消息 1/10
+2025-04-16 10:18:59,097 - INFO - 发送消息 2/10
+2025-04-16 10:19:14,347 - INFO - 发送消息 3/10
+2025-04-16 10:19:29,597 - INFO - 发送消息 4/10
+2025-04-16 10:19:44,848 - INFO - 发送消息 5/10
+2025-04-16 10:20:00,094 - INFO - 发送消息 6/10
+2025-04-16 10:20:15,350 - INFO - 发送消息 7/10
+2025-04-16 10:20:30,601 - INFO - 发送消息 8/10
+2025-04-16 10:20:45,849 - INFO - 发送消息 9/10
+2025-04-16 10:21:01,103 - INFO - 发送消息 10/10
+2025-04-16 10:21:18,355 - INFO - 多消费者: 失败 - 未找到 'Received' 消息
+2025-04-16 10:21:18,356 - INFO - 
+运行测试：连接失败...
+2025-04-16 10:21:18,357 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:21:18,749 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:21:18,762 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:21:19,493 - INFO - 启动 RabbitMQ...
+2025-04-16 10:21:21,899 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:21:42,385 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-901-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:22:02,782 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-160-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:22:23,230 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-688-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:22:23,231 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:22:23,231 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:22:43,715 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-313-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:23:04,106 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-639-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:23:24,495 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-307-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:23:24,496 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:23:24,496 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:23:24,496 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:23:24,496 - INFO - 停止 RabbitMQ...
+2025-04-16 10:23:24,496 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:23:24,850 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:23:24,863 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:23:38,265 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-16 10:23:43,297 - INFO - 启动 RabbitMQ...
+2025-04-16 10:23:43,699 - INFO - 启动 RabbitMQ...
+2025-04-16 10:23:46,108 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:24:06,603 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-543-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:24:26,995 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-69-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:24:47,394 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-423-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:24:47,394 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:24:47,394 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:25:07,872 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-277-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:25:28,265 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-702-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:25:48,665 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-703-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:25:48,665 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:25:48,665 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:25:48,665 - INFO - 连接失败: 失败 - 无法启动 RabbitMQ: 
+2025-04-16 10:25:48,665 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 10:25:48,665 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:25:49,022 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:25:49,034 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:25:49,764 - INFO - 启动 RabbitMQ...
+2025-04-16 10:25:52,184 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:26:12,673 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-415-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:26:33,081 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-60-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:26:53,481 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-750-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:26:53,482 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:26:53,482 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:27:13,976 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-482-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:27:34,367 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-3-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:27:54,762 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-76-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:27:54,763 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:27:54,763 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:27:54,763 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:27:54,763 - INFO - 禁用管理插件...
+2025-04-16 10:28:10,497 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 10:28:25,773 - INFO - 重新启用管理插件...
+2025-04-16 10:28:31,480 - INFO - 管理 API 失败: 失败 - 未找到 'Received' 消息
+2025-04-16 10:28:31,481 - INFO - 
+运行测试：日志完整性...
+2025-04-16 10:28:31,482 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:28:31,877 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:28:31,890 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:28:32,619 - INFO - 启动 RabbitMQ...
+2025-04-16 10:28:35,034 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:28:55,595 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-657-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:29:15,992 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-441-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:29:36,393 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-70-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:29:36,394 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:29:36,394 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:29:56,880 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-253-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:30:17,283 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-6-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:30:37,670 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-880-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:30:37,671 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:30:37,671 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:30:37,671 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:30:37,671 - INFO - 运行 1/3
+2025-04-16 10:30:55,953 - INFO - 运行 2/3
+2025-04-16 10:31:14,219 - INFO - 运行 3/3
+2025-04-16 10:31:32,509 - INFO - 日志完整性: 失败 - 未找到 'Received' 消息
+2025-04-16 10:31:32,510 - INFO - 
+运行测试：高并发...
+2025-04-16 10:31:32,510 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:31:32,893 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:31:32,906 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:31:33,636 - INFO - 启动 RabbitMQ...
+2025-04-16 10:31:36,063 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:31:56,574 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-749-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:32:16,964 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-932-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:32:37,372 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-185-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:32:37,372 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:32:37,372 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:32:57,865 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-372-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:33:18,260 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-255-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:33:38,657 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-780-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:33:38,658 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:33:38,658 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:33:38,658 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:33:41,668 - INFO - 并发发送 500 条消息...
+2025-04-16 10:33:56,941 - INFO - 高并发: 失败 - 未找到 'Received' 消息
+2025-04-16 10:33:56,942 - INFO - 
+运行测试：队列积压...
+2025-04-16 10:33:56,942 - INFO - 尝试停止: ['rabbitmqctl', 'stop']
+2025-04-16 10:33:57,309 - INFO - 尝试停止: ['pkill', '-u', 'rabbitmq']
+2025-04-16 10:33:57,322 - INFO - 尝试停止: ['killall', 'rabbitmq-server']
+2025-04-16 10:33:58,110 - INFO - 启动 RabbitMQ...
+2025-04-16 10:34:00,521 - INFO - 尝试启动: ['/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 10:34:20,969 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-661-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:34:41,414 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-388-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:35:01,811 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-587-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:35:01,812 - WARNING - 命令 ['/opt/homebrew/sbin/rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:35:01,812 - INFO - 尝试启动: ['rabbitmq-server', '-detached']
+2025-04-16 10:35:22,294 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-738-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:35:42,689 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-462-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:36:03,145 - WARNING - RabbitMQ 启动中，等待重试... 状态: 命令 ['rabbitmqctl', 'status'] 失败: Error: unable to perform an operation on node 'rabbit@localhost'. Please see diagnostics information and suggestions below.
+
+Most common reasons for this are:
+
+ * Target node is unreachable (e.g. due to hostname resolution, TCP connection or firewall issues)
+ * CLI tool fails to authenticate with the server (e.g. due to CLI tool's Erlang cookie not matching that of the server)
+ * Target node is not running
+
+In addition to the diagnostics info below:
+
+ * See the CLI, clustering and networking guides on https://rabbitmq.com/documentation.html to learn more
+ * Consult server logs on node rabbit@localhost
+ * If target node is configured to use long node names, don't forget to use --longnames with CLI tools
+
+DIAGNOSTICS
+===========
+
+attempted to contact: [rabbit@localhost]
+
+rabbit@localhost:
+  * connected to epmd (port 4369) on localhost
+  * epmd reports: node 'rabbit' not running at all
+                  no other nodes on localhost
+  * suggestion: start the node
+
+Current node details:
+ * node name: 'rabbitmqcli-46-rabbit@localhost'
+ * effective user's home directory: /Users/zzc
+ * Erlang cookie hash: GLTiN7rXLh94kUp5tkd8FA==
+
+
+2025-04-16 10:36:03,146 - WARNING - 命令 ['rabbitmq-server', '-detached'] 启动后状态检查失败
+2025-04-16 10:36:03,146 - ERROR - 请检查 RabbitMQ 日志: /var/log/rabbitmq/rabbit@*.log, /Users/zzc/.rabbitmq/log/rabbit@*.log, /usr/local/rabbitmq/logs/rabbit@*.log
+2025-04-16 10:36:03,146 - ERROR - 环境重置失败: 无法启动 RabbitMQ: 
+2025-04-16 10:36:03,146 - INFO - 在无消费者时发送消息...
+2025-04-16 10:48:46,186 - INFO - 启动消费者...
+2025-04-16 10:48:51,208 - INFO - 队列积压: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,209 - INFO - 
+测试总结：
+2025-04-16 10:48:51,209 - INFO - 多条消息: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,210 - INFO - 持久化: 失败 - 无法启动 RabbitMQ: 
+2025-04-16 10:48:51,210 - INFO - 多消费者: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,210 - INFO - 连接失败: 失败 - 无法启动 RabbitMQ: 
+2025-04-16 10:48:51,210 - INFO - 管理 API 失败: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,210 - INFO - 日志完整性: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,210 - INFO - 高并发: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,211 - INFO - 队列积压: 失败 - 未找到 'Received' 消息
+2025-04-16 10:48:51,211 - ERROR - 
+部分测试失败。
+2025-04-16 11:02:56,529 - INFO - 
+运行测试：多条消息...
+2025-04-16 11:02:56,531 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:03:12,651 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:03:30,891 - INFO - RabbitMQ 已停止
+2025-04-16 11:03:31,248 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:03:33,675 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:03:54,227 - INFO - RabbitMQ 启动成功
+2025-04-16 11:03:57,581 - INFO - 发送消息 1/10
+2025-04-16 11:03:57,914 - INFO - 发送消息 2/10
+2025-04-16 11:03:58,229 - INFO - 发送消息 3/10
+2025-04-16 11:03:58,553 - INFO - 发送消息 4/10
+2025-04-16 11:03:58,872 - INFO - 发送消息 5/10
+2025-04-16 11:03:59,189 - INFO - 发送消息 6/10
+2025-04-16 11:03:59,513 - INFO - 发送消息 7/10
+2025-04-16 11:03:59,831 - INFO - 发送消息 8/10
+2025-04-16 11:04:00,146 - INFO - 发送消息 9/10
+2025-04-16 11:04:00,454 - INFO - 发送消息 10/10
+2025-04-16 11:04:01,778 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-16 11:04:01,788 - INFO - 
+运行测试：持久化...
+2025-04-16 11:04:01,790 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:04:17,998 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:04:28,811 - INFO - RabbitMQ 已停止
+2025-04-16 11:04:29,174 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:04:31,606 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:04:52,165 - INFO - RabbitMQ 启动成功
+2025-04-16 11:04:55,535 - INFO - 发送消息 1/5
+2025-04-16 11:04:55,768 - INFO - 发送消息 2/5
+2025-04-16 11:04:55,976 - INFO - 发送消息 3/5
+2025-04-16 11:04:56,177 - INFO - 发送消息 4/5
+2025-04-16 11:04:56,378 - INFO - 发送消息 5/5
+2025-04-16 11:04:56,582 - INFO - 停止 RabbitMQ...
+2025-04-16 11:04:56,582 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:05:12,778 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:05:23,585 - INFO - RabbitMQ 已停止
+2025-04-16 11:05:23,585 - INFO - 启动 RabbitMQ...
+2025-04-16 11:05:23,953 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:05:26,444 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:05:47,140 - INFO - RabbitMQ 启动成功
+2025-04-16 11:05:52,146 - INFO - 持久化: 失败 - 日志包含 ERROR:  - Unexpected connection close from remote "amqp://guest:******@localhost:5672//?heartbeat=600", Con
+2025-04-16 11:05:52,151 - INFO - 
+运行测试：多消费者...
+2025-04-16 11:05:52,151 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:06:08,370 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:06:19,209 - INFO - RabbitMQ 已停止
+2025-04-16 11:06:19,596 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:06:22,026 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:06:42,604 - INFO - RabbitMQ 启动成功
+2025-04-16 11:06:47,985 - INFO - 发送消息 1/10
+2025-04-16 11:06:48,227 - INFO - 发送消息 2/10
+2025-04-16 11:06:48,429 - INFO - 发送消息 3/10
+2025-04-16 11:06:48,635 - INFO - 发送消息 4/10
+2025-04-16 11:06:48,834 - INFO - 发送消息 5/10
+2025-04-16 11:06:49,035 - INFO - 发送消息 6/10
+2025-04-16 11:06:49,238 - INFO - 发送消息 7/10
+2025-04-16 11:06:49,439 - INFO - 发送消息 8/10
+2025-04-16 11:06:49,641 - INFO - 发送消息 9/10
+2025-04-16 11:06:49,844 - INFO - 发送消息 10/10
+2025-04-16 11:06:52,052 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-16 11:06:52,071 - INFO - 
+运行测试：连接失败...
+2025-04-16 11:06:52,072 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:07:08,283 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:07:19,076 - INFO - RabbitMQ 已停止
+2025-04-16 11:07:19,445 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:07:21,864 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:07:42,626 - INFO - RabbitMQ 启动成功
+2025-04-16 11:07:43,039 - INFO - 停止 RabbitMQ...
+2025-04-16 11:07:43,039 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:07:59,229 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:08:10,023 - INFO - RabbitMQ 已停止
+2025-04-16 11:08:23,053 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-16 11:08:28,087 - INFO - 启动 RabbitMQ...
+2025-04-16 11:08:28,480 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:08:30,905 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:08:51,470 - INFO - RabbitMQ 启动成功
+2025-04-16 11:08:51,470 - INFO - 连接失败: 失败 - 未找到 '连接已关闭'
+2025-04-16 11:08:51,470 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 11:08:51,470 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:09:07,615 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:09:18,418 - INFO - RabbitMQ 已停止
+2025-04-16 11:09:18,778 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:09:21,207 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:09:41,751 - INFO - RabbitMQ 启动成功
+2025-04-16 11:09:42,103 - INFO - 禁用管理插件...
+2025-04-16 11:09:57,816 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 11:09:58,060 - INFO - 重新启用管理插件...
+2025-04-16 11:10:04,024 - INFO - 管理 API 失败: 通过 - 日志检查通过
+2025-04-16 11:10:04,025 - INFO - 
+运行测试：日志完整性...
+2025-04-16 11:10:04,026 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:10:20,313 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:10:31,139 - INFO - RabbitMQ 已停止
+2025-04-16 11:10:31,511 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:10:33,940 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:10:54,517 - INFO - RabbitMQ 启动成功
+2025-04-16 11:10:54,874 - INFO - 运行 1/3
+2025-04-16 11:10:58,121 - INFO - 运行 2/3
+2025-04-16 11:11:01,369 - INFO - 运行 3/3
+2025-04-16 11:11:04,606 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-16 11:11:04,606 - INFO - 
+运行测试：高并发...
+2025-04-16 11:11:04,606 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:11:20,768 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:11:31,561 - INFO - RabbitMQ 已停止
+2025-04-16 11:11:31,926 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:11:34,353 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:11:54,922 - INFO - RabbitMQ 启动成功
+2025-04-16 11:11:58,292 - INFO - 并发发送 500 条消息...
+2025-04-16 11:11:58,652 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-16 11:11:58,652 - INFO - 
+运行测试：队列积压...
+2025-04-16 11:11:58,652 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:12:14,927 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:12:25,783 - INFO - RabbitMQ 已停止
+2025-04-16 11:12:26,175 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:12:28,608 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:12:49,205 - INFO - RabbitMQ 启动成功
+2025-04-16 11:12:49,594 - INFO - 在无消费者时发送消息...
+2025-04-16 11:12:59,624 - INFO - 启动消费者...
+2025-04-16 11:13:04,644 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-16 11:13:04,645 - INFO - 
+测试总结：
+2025-04-16 11:13:04,645 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-16 11:13:04,645 - INFO - 持久化: 失败 - 日志包含 ERROR:  - Unexpected connection close from remote "amqp://guest:******@localhost:5672//?heartbeat=600", Con
+2025-04-16 11:13:04,645 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-16 11:13:04,646 - INFO - 连接失败: 失败 - 未找到 '连接已关闭'
+2025-04-16 11:13:04,646 - INFO - 管理 API 失败: 通过 - 日志检查通过
+2025-04-16 11:13:04,646 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-16 11:13:04,646 - INFO - 高并发: 通过 - 日志检查通过
+2025-04-16 11:13:04,646 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-16 11:13:04,646 - ERROR - 
+部分测试失败。
+2025-04-16 11:21:31,019 - INFO - 
+运行测试：多条消息...
+2025-04-16 11:21:31,020 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:21:47,194 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:22:07,886 - INFO - RabbitMQ 已停止
+2025-04-16 11:22:08,252 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:22:10,681 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:22:31,260 - INFO - RabbitMQ 启动成功
+2025-04-16 11:22:34,623 - INFO - 发送消息 1/10
+2025-04-16 11:22:34,890 - INFO - 发送消息 2/10
+2025-04-16 11:22:35,126 - INFO - 发送消息 3/10
+2025-04-16 11:22:35,366 - INFO - 发送消息 4/10
+2025-04-16 11:22:35,599 - INFO - 发送消息 5/10
+2025-04-16 11:22:35,829 - INFO - 发送消息 6/10
+2025-04-16 11:22:36,062 - INFO - 发送消息 7/10
+2025-04-16 11:22:36,295 - INFO - 发送消息 8/10
+2025-04-16 11:22:36,533 - INFO - 发送消息 9/10
+2025-04-16 11:22:36,762 - INFO - 发送消息 10/10
+2025-04-16 11:22:38,004 - INFO - 多条消息: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:22:34,769 - __main__ - INFO - 操作失败:
+2025-04-16 11:22:38,005 - INFO - 
+运行测试：持久化...
+2025-04-16 11:22:38,006 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:22:54,223 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:23:05,031 - INFO - RabbitMQ 已停止
+2025-04-16 11:23:05,391 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:23:07,817 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:23:28,390 - INFO - RabbitMQ 启动成功
+2025-04-16 11:23:31,754 - INFO - 发送消息 1/5
+2025-04-16 11:23:31,914 - INFO - 发送消息 2/5
+2025-04-16 11:23:32,038 - INFO - 发送消息 3/5
+2025-04-16 11:23:32,162 - INFO - 发送消息 4/5
+2025-04-16 11:23:32,286 - INFO - 发送消息 5/5
+2025-04-16 11:23:32,409 - INFO - 停止 RabbitMQ...
+2025-04-16 11:23:32,409 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:23:48,577 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:23:59,370 - INFO - RabbitMQ 已停止
+2025-04-16 11:23:59,370 - INFO - 启动 RabbitMQ...
+2025-04-16 11:23:59,724 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:24:02,148 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:24:22,815 - INFO - RabbitMQ 启动成功
+2025-04-16 11:24:32,822 - INFO - 持久化: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:23:31,898 - __main__ - INFO - 操作失败:
+2025-04-16 11:24:32,823 - INFO - 
+运行测试：多消费者...
+2025-04-16 11:24:32,824 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:24:49,070 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:25:00,029 - INFO - RabbitMQ 已停止
+2025-04-16 11:25:00,488 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:25:03,098 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:25:23,880 - INFO - RabbitMQ 启动成功
+2025-04-16 11:25:29,358 - INFO - 发送消息 1/10
+2025-04-16 11:25:29,527 - INFO - 发送消息 2/10
+2025-04-16 11:25:29,771 - INFO - 发送消息 3/10
+2025-04-16 11:25:29,931 - INFO - 发送消息 4/10
+2025-04-16 11:25:30,080 - INFO - 发送消息 5/10
+2025-04-16 11:25:30,239 - INFO - 发送消息 6/10
+2025-04-16 11:25:30,395 - INFO - 发送消息 7/10
+2025-04-16 11:25:30,626 - INFO - 发送消息 8/10
+2025-04-16 11:25:30,787 - INFO - 发送消息 9/10
+2025-04-16 11:25:30,943 - INFO - 发送消息 10/10
+2025-04-16 11:25:33,106 - INFO - 多消费者: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:25:29,507 - __main__ - INFO - 操作失败:
+2025-04-16 11:25:33,106 - INFO - 
+运行测试：连接失败...
+2025-04-16 11:25:33,106 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:25:49,562 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:26:00,650 - INFO - RabbitMQ 已停止
+2025-04-16 11:26:01,063 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:26:03,535 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:26:24,194 - INFO - RabbitMQ 启动成功
+2025-04-16 11:26:24,565 - INFO - 停止 RabbitMQ...
+2025-04-16 11:26:24,565 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:26:40,938 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:26:52,120 - INFO - RabbitMQ 已停止
+2025-04-16 11:27:07,142 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-16 11:27:12,174 - INFO - 启动 RabbitMQ...
+2025-04-16 11:27:12,580 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:27:15,039 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:27:35,681 - INFO - RabbitMQ 启动成功
+2025-04-16 11:27:40,684 - INFO - 连接失败: 失败 - 日志包含 ERROR:  - 连接失败，重试中: Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 5672), [Errno 61] Con
+2025-04-16 11:27:40,685 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 11:27:40,685 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:27:57,113 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:28:08,095 - INFO - RabbitMQ 已停止
+2025-04-16 11:28:08,504 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:28:10,952 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:28:31,547 - INFO - RabbitMQ 启动成功
+2025-04-16 11:28:31,904 - INFO - 禁用管理插件...
+2025-04-16 11:28:47,637 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 11:28:47,802 - INFO - 重新启用管理插件...
+2025-04-16 11:28:53,746 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:28:47,785 - __main__ - INFO - 操作失败:
+2025-04-16 11:28:53,746 - INFO - 
+运行测试：日志完整性...
+2025-04-16 11:28:53,746 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:29:09,976 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:29:20,789 - INFO - RabbitMQ 已停止
+2025-04-16 11:29:21,167 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:29:23,592 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:29:44,385 - INFO - RabbitMQ 启动成功
+2025-04-16 11:29:44,860 - INFO - 运行 1/3
+2025-04-16 11:29:48,026 - INFO - 运行 2/3
+2025-04-16 11:29:51,203 - INFO - 运行 3/3
+2025-04-16 11:29:54,371 - INFO - 日志完整性: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:29:48,009 - __main__ - INFO - 操作失败:
+2025-04-16 11:29:54,371 - INFO - 
+运行测试：高并发...
+2025-04-16 11:29:54,372 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:30:10,552 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:30:21,363 - INFO - RabbitMQ 已停止
+2025-04-16 11:30:21,722 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:30:24,148 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:30:44,697 - INFO - RabbitMQ 启动成功
+2025-04-16 11:30:50,059 - INFO - 开始高并发测试，发送 500 条消息...
+2025-04-16 11:30:50,305 - INFO - 高并发: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:30:50,220 - rabbitmq_client - INFO 
+2025-04-16 11:30:50,306 - INFO - 
+运行测试：队列积压...
+2025-04-16 11:30:50,306 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:31:06,532 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:31:17,331 - INFO - RabbitMQ 已停止
+2025-04-16 11:31:17,689 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:31:20,114 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:31:40,697 - INFO - RabbitMQ 启动成功
+2025-04-16 11:31:41,053 - INFO - 在无消费者时发送消息...
+2025-04-16 11:31:47,211 - INFO - 启动消费者...
+2025-04-16 11:31:52,223 - INFO - 队列积压: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:31:47,332 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,224 - INFO - 
+测试总结：
+2025-04-16 11:31:52,224 - INFO - 多条消息: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:22:34,769 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,224 - INFO - 持久化: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:23:31,898 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,225 - INFO - 多消费者: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:25:29,507 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,225 - INFO - 连接失败: 失败 - 日志包含 ERROR:  - 连接失败，重试中: Multiple exceptions: [Errno 61] Connect call failed ('127.0.0.1', 5672), [Errno 61] Con
+2025-04-16 11:31:52,225 - INFO - 管理 API 失败: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:28:47,785 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,225 - INFO - 日志完整性: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:29:48,009 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,225 - INFO - 高并发: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:30:50,220 - rabbitmq_client - INFO 
+2025-04-16 11:31:52,225 - INFO - 队列积压: 失败 - 日志包含 ERROR:  - 消费消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:31:47,332 - __main__ - INFO - 操作失败:
+2025-04-16 11:31:52,226 - ERROR - 
+部分测试失败。
+2025-04-16 11:32:51,900 - INFO - 
+运行测试：多条消息...
+2025-04-16 11:32:51,900 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:33:08,072 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:33:18,863 - INFO - RabbitMQ 已停止
+2025-04-16 11:33:19,219 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:33:21,642 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:33:42,192 - INFO - RabbitMQ 启动成功
+2025-04-16 11:33:47,559 - INFO - 发送消息 1/10
+2025-04-16 11:33:47,920 - INFO - 发送消息 2/10
+2025-04-16 11:33:48,278 - INFO - 发送消息 3/10
+2025-04-16 11:33:48,616 - INFO - 发送消息 4/10
+2025-04-16 11:33:48,977 - INFO - 发送消息 5/10
+2025-04-16 11:33:49,341 - INFO - 发送消息 6/10
+2025-04-16 11:33:49,698 - INFO - 发送消息 7/10
+2025-04-16 11:33:50,067 - INFO - 发送消息 8/10
+2025-04-16 11:33:50,438 - INFO - 发送消息 9/10
+2025-04-16 11:33:50,799 - INFO - 发送消息 10/10
+2025-04-16 11:33:53,172 - INFO - 多条消息: 失败 - 日志包含 ERROR:  - 处理消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:33:47,702 - rabbitmq_client - INFO 
+2025-04-16 11:33:53,182 - INFO - 
+运行测试：持久化...
+2025-04-16 11:33:53,183 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:34:09,404 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:34:20,203 - INFO - RabbitMQ 已停止
+2025-04-16 11:34:20,561 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:34:22,980 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:34:43,541 - INFO - RabbitMQ 启动成功
+2025-04-16 11:34:48,909 - INFO - 发送消息 1/5
+2025-04-16 11:34:49,270 - INFO - 发送消息 2/5
+2025-04-16 11:34:49,626 - INFO - 发送消息 3/5
+2025-04-16 11:34:49,960 - INFO - 发送消息 4/5
+2025-04-16 11:34:50,323 - INFO - 发送消息 5/5
+2025-04-16 11:34:50,689 - INFO - 停止 RabbitMQ...
+2025-04-16 11:34:50,690 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:35:06,868 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:35:17,674 - INFO - RabbitMQ 已停止
+2025-04-16 11:35:17,674 - INFO - 启动 RabbitMQ...
+2025-04-16 11:35:18,038 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:35:20,462 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:35:41,075 - INFO - RabbitMQ 启动成功
+2025-04-16 11:35:44,686 - INFO - 捕获 Ctrl+C，正在清理...
+2025-04-16 11:35:44,691 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:36:00,860 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:36:11,670 - INFO - RabbitMQ 已停止
+2025-04-16 11:36:12,030 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:36:14,458 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:36:35,020 - INFO - RabbitMQ 启动成功
+2025-04-16 11:36:35,379 - INFO - 测试中止
+2025-04-16 11:37:33,292 - INFO - 
+运行测试：持久化...
+2025-04-16 11:37:33,292 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:37:49,410 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:38:00,199 - INFO - RabbitMQ 已停止
+2025-04-16 11:38:00,556 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:38:02,980 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:38:23,550 - INFO - RabbitMQ 启动成功
+2025-04-16 11:38:28,908 - INFO - 发送消息 1/5
+2025-04-16 11:38:29,271 - INFO - 发送消息 2/5
+2025-04-16 11:38:29,653 - INFO - 发送消息 3/5
+2025-04-16 11:38:29,989 - INFO - 发送消息 4/5
+2025-04-16 11:38:30,357 - INFO - 发送消息 5/5
+2025-04-16 11:38:30,720 - INFO - 停止 RabbitMQ...
+2025-04-16 11:38:30,720 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:38:46,874 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:38:57,670 - INFO - RabbitMQ 已停止
+2025-04-16 11:38:57,670 - INFO - 启动 RabbitMQ...
+2025-04-16 11:38:58,033 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:39:00,452 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:39:21,016 - INFO - RabbitMQ 启动成功
+2025-04-16 11:39:36,023 - INFO - 持久化: 失败 - 日志包含 ERROR:  - 处理消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:38:29,055 - rabbitmq_client - INFO 
+2025-04-16 11:39:36,033 - INFO - 
+测试总结：
+2025-04-16 11:39:36,033 - INFO - 持久化: 失败 - 日志包含 ERROR:  - 处理消息失败: 'str' object has no attribute 'process'
+2025-04-16 11:38:29,055 - rabbitmq_client - INFO 
+2025-04-16 11:39:36,033 - ERROR - 
+部分测试失败。
+2025-04-16 11:42:38,112 - INFO - 
+运行测试：持久化...
+2025-04-16 11:42:38,113 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:42:54,312 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:43:05,136 - INFO - RabbitMQ 已停止
+2025-04-16 11:43:05,499 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:43:07,974 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:43:07,986 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:43:28,551 - INFO - RabbitMQ 启动成功
+2025-04-16 11:43:33,918 - INFO - 发送消息 1/5
+2025-04-16 11:43:34,277 - INFO - 发送消息 2/5
+2025-04-16 11:43:34,637 - INFO - 发送消息 3/5
+2025-04-16 11:43:34,983 - INFO - 发送消息 4/5
+2025-04-16 11:43:35,346 - INFO - 发送消息 5/5
+2025-04-16 11:43:35,710 - INFO - 停止 RabbitMQ...
+2025-04-16 11:43:35,712 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:43:51,881 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:44:02,674 - INFO - RabbitMQ 已停止
+2025-04-16 11:44:02,674 - INFO - 启动 RabbitMQ...
+2025-04-16 11:44:03,043 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:44:05,506 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:44:05,518 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:44:26,070 - INFO - RabbitMQ 启动成功
+2025-04-16 11:44:56,102 - INFO - 持久化: 失败 - 日志包含 ERROR:  - Unexpected connection close from remote "amqp://guest:******@localhost:5672//?heartbeat=30", Conn
+2025-04-16 11:44:56,107 - INFO - 
+测试总结：
+2025-04-16 11:44:56,108 - INFO - 持久化: 失败 - 日志包含 ERROR:  - Unexpected connection close from remote "amqp://guest:******@localhost:5672//?heartbeat=30", Conn
+2025-04-16 11:44:56,108 - ERROR - 
+部分测试失败。
+2025-04-16 11:47:21,850 - ERROR - 无效测试名称: 持久化clear
+2025-04-16 11:50:09,446 - INFO - 
+运行测试：持久化...
+2025-04-16 11:50:09,447 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:50:25,630 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:50:41,242 - INFO - RabbitMQ 已停止
+2025-04-16 11:50:41,600 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:50:44,069 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:50:44,069 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:51:04,629 - INFO - RabbitMQ 启动成功
+2025-04-16 11:51:04,986 - INFO - 检查初始队列状态...
+2025-04-16 11:51:10,360 - INFO - 发送消息 1/5
+2025-04-16 11:51:10,720 - INFO - 发送消息 2/5
+2025-04-16 11:51:11,055 - INFO - 发送消息 3/5
+2025-04-16 11:51:11,413 - INFO - 发送消息 4/5
+2025-04-16 11:51:11,777 - INFO - 发送消息 5/5
+2025-04-16 11:51:12,525 - INFO - 发送后队列状态: Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+name	messages
+hello	0
+
+2025-04-16 11:51:12,525 - INFO - 停止 RabbitMQ...
+2025-04-16 11:51:12,525 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:51:28,713 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:51:39,525 - INFO - RabbitMQ 已停止
+2025-04-16 11:51:39,525 - INFO - 启动 RabbitMQ...
+2025-04-16 11:51:39,887 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:51:42,353 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:51:42,354 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:52:02,932 - INFO - RabbitMQ 启动成功
+2025-04-16 11:52:03,305 - INFO - 重启后队列状态: Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+name	messages
+hello	0
+
+2025-04-16 11:52:33,342 - INFO - 持久化: 通过 - 日志检查通过
+2025-04-16 11:52:33,352 - INFO - 
+测试总结：
+2025-04-16 11:52:33,352 - INFO - 持久化: 通过 - 日志检查通过
+2025-04-16 11:52:33,352 - INFO - 
+所有测试通过！
+2025-04-16 11:52:33,353 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:52:49,576 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:53:00,376 - INFO - RabbitMQ 已停止
+2025-04-16 11:53:00,736 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:53:03,198 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:53:03,198 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:53:23,790 - INFO - RabbitMQ 启动成功
+2025-04-16 11:54:52,216 - INFO - 
+运行测试：多条消息...
+2025-04-16 11:54:52,217 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:55:08,378 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:55:19,183 - INFO - RabbitMQ 已停止
+2025-04-16 11:55:19,541 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:55:22,013 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:55:22,013 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:55:42,637 - INFO - RabbitMQ 启动成功
+2025-04-16 11:55:48,004 - INFO - 发送消息 1/10
+2025-04-16 11:55:48,363 - INFO - 发送消息 2/10
+2025-04-16 11:55:48,722 - INFO - 发送消息 3/10
+2025-04-16 11:55:49,068 - INFO - 发送消息 4/10
+2025-04-16 11:55:49,434 - INFO - 发送消息 5/10
+2025-04-16 11:55:49,800 - INFO - 发送消息 6/10
+2025-04-16 11:55:50,162 - INFO - 发送消息 7/10
+2025-04-16 11:55:50,517 - INFO - 发送消息 8/10
+2025-04-16 11:55:50,881 - INFO - 发送消息 9/10
+2025-04-16 11:55:51,246 - INFO - 发送消息 10/10
+2025-04-16 11:55:53,606 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-16 11:55:53,611 - INFO - 
+测试总结：
+2025-04-16 11:55:53,611 - INFO - 多条消息: 通过 - 日志检查通过
+2025-04-16 11:55:53,611 - INFO - 
+所有测试通过！
+2025-04-16 11:55:53,611 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:56:09,899 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:56:20,697 - INFO - RabbitMQ 已停止
+2025-04-16 11:56:21,056 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:56:23,508 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:56:23,508 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:56:44,065 - INFO - RabbitMQ 启动成功
+2025-04-16 11:57:13,128 - INFO - 
+运行测试：多消费者...
+2025-04-16 11:57:13,129 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:57:29,279 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:57:40,077 - INFO - RabbitMQ 已停止
+2025-04-16 11:57:40,437 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:57:42,894 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:57:42,894 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:58:03,436 - INFO - RabbitMQ 启动成功
+2025-04-16 11:58:08,801 - INFO - 发送消息 1/10
+2025-04-16 11:58:09,162 - INFO - 发送消息 2/10
+2025-04-16 11:58:09,523 - INFO - 发送消息 3/10
+2025-04-16 11:58:09,866 - INFO - 发送消息 4/10
+2025-04-16 11:58:10,234 - INFO - 发送消息 5/10
+2025-04-16 11:58:10,601 - INFO - 发送消息 6/10
+2025-04-16 11:58:10,968 - INFO - 发送消息 7/10
+2025-04-16 11:58:11,330 - INFO - 发送消息 8/10
+2025-04-16 11:58:11,697 - INFO - 发送消息 9/10
+2025-04-16 11:58:12,061 - INFO - 发送消息 10/10
+2025-04-16 11:58:14,427 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-16 11:58:14,446 - INFO - 
+测试总结：
+2025-04-16 11:58:14,447 - INFO - 多消费者: 通过 - 日志检查通过
+2025-04-16 11:58:14,447 - INFO - 
+所有测试通过！
+2025-04-16 11:58:14,448 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:58:30,695 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:58:41,494 - INFO - RabbitMQ 已停止
+2025-04-16 11:58:41,853 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:58:44,321 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:58:44,321 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 11:59:04,894 - INFO - RabbitMQ 启动成功
+2025-04-16 11:59:23,368 - INFO - 
+运行测试：连接失败...
+2025-04-16 11:59:23,368 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 11:59:39,531 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 11:59:50,335 - INFO - RabbitMQ 已停止
+2025-04-16 11:59:50,693 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 11:59:53,157 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 11:59:53,158 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:00:13,693 - INFO - RabbitMQ 启动成功
+2025-04-16 12:00:14,045 - INFO - 停止 RabbitMQ...
+2025-04-16 12:00:14,045 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:00:30,204 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:00:40,997 - INFO - RabbitMQ 已停止
+2025-04-16 12:00:56,024 - INFO - 尝试在 RabbitMQ 停止时发送消息...
+2025-04-16 12:01:06,053 - INFO - 启动 RabbitMQ...
+2025-04-16 12:01:06,458 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:01:08,924 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:01:08,924 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:01:29,472 - INFO - RabbitMQ 启动成功
+2025-04-16 12:01:34,478 - INFO - 连接失败: 通过 - 日志检查通过
+2025-04-16 12:01:34,479 - INFO - 
+测试总结：
+2025-04-16 12:01:34,479 - INFO - 连接失败: 通过 - 日志检查通过
+2025-04-16 12:01:34,480 - INFO - 
+所有测试通过！
+2025-04-16 12:01:34,481 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:01:50,714 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:02:01,546 - INFO - RabbitMQ 已停止
+2025-04-16 12:02:01,908 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:02:04,368 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:02:04,369 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:02:24,939 - INFO - RabbitMQ 启动成功
+2025-04-16 12:03:04,612 - ERROR - 无效测试名称: 管理API失败
+2025-04-16 12:03:14,316 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 12:03:14,317 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:03:30,478 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:03:41,269 - INFO - RabbitMQ 已停止
+2025-04-16 12:03:41,625 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:03:44,076 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:03:44,076 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:04:04,633 - INFO - RabbitMQ 启动成功
+2025-04-16 12:04:04,983 - INFO - 禁用管理插件...
+2025-04-16 12:04:20,711 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 12:04:20,878 - INFO - 重新启用管理插件...
+2025-04-16 12:04:26,820 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:04:26,820 - INFO - 
+测试总结：
+2025-04-16 12:04:26,820 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:04:26,820 - ERROR - 
+部分测试失败。
+2025-04-16 12:05:03,847 - INFO - 
+运行测试：日志完整性...
+2025-04-16 12:05:03,848 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:05:20,064 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:05:30,860 - INFO - RabbitMQ 已停止
+2025-04-16 12:05:31,220 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:05:33,687 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:05:33,688 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:05:54,246 - INFO - RabbitMQ 启动成功
+2025-04-16 12:05:54,615 - INFO - 运行 1/3
+2025-04-16 12:05:59,783 - INFO - 运行 2/3
+2025-04-16 12:06:04,951 - INFO - 运行 3/3
+2025-04-16 12:06:10,104 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-16 12:06:10,104 - INFO - 
+测试总结：
+2025-04-16 12:06:10,104 - INFO - 日志完整性: 通过 - 日志检查通过
+2025-04-16 12:06:10,104 - INFO - 
+所有测试通过！
+2025-04-16 12:06:10,104 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:06:26,289 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:06:37,119 - INFO - RabbitMQ 已停止
+2025-04-16 12:06:37,488 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:06:39,960 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:06:39,960 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:07:00,544 - INFO - RabbitMQ 启动成功
+2025-04-16 12:07:18,137 - INFO - 
+运行测试：高并发...
+2025-04-16 12:07:18,138 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:07:34,306 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:07:45,131 - INFO - RabbitMQ 已停止
+2025-04-16 12:07:45,510 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:07:47,995 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:07:47,996 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:08:08,552 - INFO - RabbitMQ 启动成功
+2025-04-16 12:08:13,921 - INFO - 开始高并发测试，发送 500 条消息...
+2025-04-16 12:08:14,327 - INFO - 高并发测试收到 972/500 条消息
+2025-04-16 12:08:14,328 - INFO - 高并发: 失败 - 缺少消息 ID: {'"id": 492', '"id": 490', '"id": 498', '"id": 488', '"id": 495', '"id": 493'}
+2025-04-16 12:08:14,328 - INFO - 
+测试总结：
+2025-04-16 12:08:14,328 - INFO - 高并发: 失败 - 缺少消息 ID: {'"id": 492', '"id": 490', '"id": 498', '"id": 488', '"id": 495', '"id": 493'}
+2025-04-16 12:08:14,328 - ERROR - 
+部分测试失败。
+2025-04-16 12:08:43,920 - INFO - 
+运行测试：队列积压...
+2025-04-16 12:08:43,920 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:09:00,150 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:09:10,959 - INFO - RabbitMQ 已停止
+2025-04-16 12:09:11,325 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:09:13,793 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:09:13,793 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:09:34,367 - INFO - RabbitMQ 启动成功
+2025-04-16 12:09:34,719 - INFO - 在无消费者时发送消息...
+2025-04-16 12:09:40,854 - INFO - 启动消费者...
+2025-04-16 12:09:45,869 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-16 12:09:45,869 - INFO - 
+测试总结：
+2025-04-16 12:09:45,870 - INFO - 队列积压: 通过 - 日志检查通过
+2025-04-16 12:09:45,870 - INFO - 
+所有测试通过！
+2025-04-16 12:09:45,870 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:10:02,091 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:10:12,910 - INFO - RabbitMQ 已停止
+2025-04-16 12:10:13,270 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:10:15,728 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:10:15,729 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:10:36,289 - INFO - RabbitMQ 启动成功
+2025-04-16 12:12:17,797 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 12:12:17,797 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:12:33,949 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:12:44,737 - INFO - RabbitMQ 已停止
+2025-04-16 12:12:45,098 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:12:47,552 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:12:47,552 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:13:08,089 - INFO - RabbitMQ 启动成功
+2025-04-16 12:13:08,442 - INFO - 禁用管理插件...
+2025-04-16 12:13:24,179 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 12:13:24,339 - INFO - 重新启用管理插件...
+2025-04-16 12:13:30,285 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:13:30,286 - INFO - 
+测试总结：
+2025-04-16 12:13:30,286 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:13:30,286 - ERROR - 
+部分测试失败。
+2025-04-16 12:17:43,774 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 12:17:43,775 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:18:00,032 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:18:15,780 - INFO - RabbitMQ 已停止
+2025-04-16 12:18:16,138 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:18:18,599 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:18:18,599 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:18:39,273 - INFO - RabbitMQ 启动成功
+2025-04-16 12:18:39,850 - INFO - 禁用管理插件...
+2025-04-16 12:18:50,778 - INFO - 管理 API 请求失败: HTTPConnectionPool(host='localhost', port=15672): Max retries exceeded with url: /api/queues (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10d354040>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-16 12:18:55,799 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 12:18:55,964 - INFO - 重新启用管理插件...
+2025-04-16 12:19:01,963 - INFO - 管理 API 恢复: 200
+2025-04-16 12:19:01,964 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:19:01,964 - INFO - 
+测试总结：
+2025-04-16 12:19:01,964 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:19:01,964 - ERROR - 
+部分测试失败。
+2025-04-16 12:22:39,919 - INFO - 
+运行测试：管理 API 失败...
+2025-04-16 12:22:39,919 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:22:56,135 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:23:06,944 - INFO - RabbitMQ 已停止
+2025-04-16 12:23:07,300 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:23:09,764 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:23:09,765 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:23:30,301 - INFO - RabbitMQ 启动成功
+2025-04-16 12:23:30,658 - INFO - 禁用管理插件...
+2025-04-16 12:23:41,390 - INFO - 管理 API 请求失败: HTTPConnectionPool(host='localhost', port=15672): Max retries exceeded with url: /api/queues (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10b4901c0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+2025-04-16 12:23:46,403 - INFO - 在管理 API 禁用时发送消息...
+2025-04-16 12:23:46,565 - INFO - 重新启用管理插件...
+2025-04-16 12:23:52,512 - INFO - 管理 API 恢复: 200
+2025-04-16 12:23:52,512 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:23:52,512 - INFO - 
+测试总结：
+2025-04-16 12:23:52,512 - INFO - 管理 API 失败: 失败 - 未找到 API 失败记录
+2025-04-16 12:23:52,512 - ERROR - 
+部分测试失败。
+2025-04-16 12:24:07,765 - INFO - 
+运行测试：高并发...
+2025-04-16 12:24:07,765 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:24:24,028 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:24:34,825 - INFO - RabbitMQ 已停止
+2025-04-16 12:24:35,210 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:24:37,715 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:24:37,715 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:24:58,255 - INFO - RabbitMQ 启动成功
+2025-04-16 12:25:03,618 - INFO - 开始高并发测试，发送 500 条消息...
+2025-04-16 12:25:03,922 - INFO - 高并发测试收到 920/500 条消息
+2025-04-16 12:25:03,923 - INFO - 高并发: 失败 - 缺少消息 ID: {'"id": 485', '"id": 468', '"id": 466', '"id": 497', '"id": 480', '"id": 473', '"id": 483', '"id": 478', '"id": 491', '"id": 494', '"id": 475', '"id": 464', '"id": 488', '"id": 472', '"id": 499', '"id": 470'}
+2025-04-16 12:25:03,923 - INFO - 
+测试总结：
+2025-04-16 12:25:03,923 - INFO - 高并发: 失败 - 缺少消息 ID: {'"id": 485', '"id": 468', '"id": 466', '"id": 497', '"id": 480', '"id": 473', '"id": 483', '"id": 478', '"id": 491', '"id": 494', '"id": 475', '"id": 464', '"id": 488', '"id": 472', '"id": 499', '"id": 470'}
+2025-04-16 12:25:03,923 - ERROR - 
+部分测试失败。
+2025-04-16 12:30:11,534 - INFO - 
+运行测试：高并发...
+2025-04-16 12:30:11,535 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:30:27,800 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:30:43,647 - INFO - RabbitMQ 已停止
+2025-04-16 12:30:44,019 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:30:46,497 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:30:46,498 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:31:07,074 - INFO - RabbitMQ 启动成功
+2025-04-16 12:31:07,789 - INFO - 初始队列状态: Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+
+2025-04-16 12:31:12,799 - INFO - 开始高并发测试，发送 500 条消息...
+2025-04-16 12:31:24,218 - INFO - 消费后队列状态: Timeout: 60.0 seconds ...
+Listing queues for vhost / ...
+name	messages
+hello	0
+
+2025-04-16 12:31:24,219 - INFO - 检测到 1000 条 Received 消息
+2025-04-16 12:31:24,220 - INFO - 高并发测试收到 1000/500 条消息
+2025-04-16 12:31:24,222 - INFO - 高并发: 通过 - 2025-04-16 12:31:13,496 - __main__ - INFO - Received: {"id": 499, "content": "Hello, RabbitMQ! 499"}
+2025-04-16 12:31:24,222 - INFO - 
+测试总结：
+2025-04-16 12:31:24,222 - INFO - 高并发: 通过 - 2025-04-16 12:31:13,496 - __main__ - INFO - Received: {"id": 499, "content": "Hello, RabbitMQ! 499"}
+2025-04-16 12:31:24,222 - INFO - 
+所有测试通过！
+2025-04-16 12:31:24,223 - INFO - 尝试停止: ['rabbitmq-plugins', 'disable', 'rabbitmq_management']
+2025-04-16 12:31:40,543 - INFO - 尝试停止: ['sudo', 'rabbitmqctl', 'stop']
+2025-04-16 12:31:51,377 - INFO - RabbitMQ 已停止
+2025-04-16 12:31:51,736 - INFO - 启动 RabbitMQ，可能需要输入 sudo 密码...
+2025-04-16 12:31:54,193 - INFO - 已调整权限: /opt/homebrew/var/lib/rabbitmq
+2025-04-16 12:31:54,193 - INFO - 尝试启动: ['sudo', '/opt/homebrew/sbin/rabbitmq-server', '-detached']
+2025-04-16 12:32:14,726 - INFO - RabbitMQ 启动成功

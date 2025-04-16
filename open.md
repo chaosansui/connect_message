@@ -38,7 +38,7 @@ rabbitmq_client.py：
 快速开始
 1. 环境要求
 
-Python: 3.9+
+Python: 3.10+
 RabbitMQ: 3.9.x 或更高
 macOS 安装：brew install rabbitmq
 默认路径：/opt/homebrew/sbin/rabbitmq-server
